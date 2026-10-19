@@ -1,0 +1,6 @@
+{
+  "name": "PianoVision - Piano Roll Music Visualizer",
+  "description": "Professional piano roll editor and cinematic falling-notes music visualizer for creating YouTube videos from MIDI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

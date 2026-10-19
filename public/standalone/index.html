@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PianoVision - Standalone Music Visualizer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="brand-dot"></div>
+      PianoVision <span>Standalone</span>
+    </div>
+
+    <div style="display: flex; gap: 8px; align-items: center;">
+      <label class="toolbar-btn">
+        Import MIDI
+        <input type="file" id="midi-input" accept=".mid,.midi" style="display: none;">
+      </label>
+      <button class="toolbar-btn primary" id="export-video-btn">
+        Export Video (.webm)
+      </button>
+    </div>
+  </header>
+
+  <div id="canvas-container">
+    <canvas id="view-canvas"></canvas>
+  </div>
+
+  <footer>
+    <div class="transport-group">
+      <button class="play-btn" id="play-btn">▶</button>
+      <button class="toolbar-btn" id="stop-btn">◼</button>
+    </div>
+
+    <div class="time-display" id="time-txt">00:00 / 00:00</div>
+    <input type="range" class="progress-slider" id="progress" min="0" max="100" value="0" step="0.1">
+
+    <div class="badge">Offline Vanilla Build · Zero Node/NPM</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
